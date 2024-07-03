@@ -12,7 +12,8 @@ RUN sed -i 's/80/8080/g' /etc/apache2/sites-available/000-default.conf /etc/apac
 # 如果您需要配置为生产环境，可以运行以下命令
 # RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 # 参考：https://hub.docker.com/_/php#configuration
-RUN docker-php-ext-install pdo pdo_mysql
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+RUN docker-php-ext-install mysqli
+copy php_custom.ini $PHP_INI_DIR/
+RUN mv "$PHP_INI_DIR/php_custom.ini" "$PHP_INI_DIR/php.ini"
 
 
