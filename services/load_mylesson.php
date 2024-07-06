@@ -25,7 +25,7 @@
             $lesson->slesson=$row["slesson"];
             $lesson->sclass=$row["sclass"];
             $lesson->setTime=$row["setTime"];
-            $steacher->setTime=$row["steacher"];
+            $steacher->steacher=$row["steacher"];
             
             $data[] = $lesson;
             
