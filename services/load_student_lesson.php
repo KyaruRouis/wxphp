@@ -11,6 +11,8 @@
 		public $slesson;
 		public $sclass;
 		public $setTime;
+		public $openid;
+		public $steacher;
 	
 	}
 	$data = array();
@@ -22,6 +24,8 @@
 			$article->slesson=$row["slesson"];
 			$article->sclass=$row["sclass"];
 			$article->setTime=$row["setTime"];
+			$article->openid=$row["openid"];
+			$article->steacher=$row["steacher"];
 			
 			$data[] = $article;
 			

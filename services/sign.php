@@ -6,6 +6,7 @@
     $snum = $_POST['snum'];
     $slesson = $_POST['slesson']; 
     $sclass = $_POST['sclass'];
+    $steacher = $_POST['steacher'];
 
 
     if (!empty($sname&&$snum)) {  
@@ -16,7 +17,7 @@
         	echo $sql1;
         }
      }elseif(!empty($slesson&&$sclass)){
-      $sql2 = "insert into lesson(openid,slesson,sclass,setTime) values ('$userid','$slesson','$sclass',Now())";  
+      $sql2 = "insert into lesson(openid,steacher,slesson,sclass,setTime) values ('$userid',$steacher,'$slesson','$sclass',Now())";  
        if(mysqli_query($conn, $sql2)){
            echo json_encode("lesson_success");  
          }else{

@@ -13,6 +13,7 @@
 		public $slesson;
 		public $sclass;
 		public $setTime;
+		public $steacher;
 	
 	}
 	$data = array();
@@ -24,6 +25,7 @@
 			$article->slesson=$row["slesson"];
 			$article->sclass=$row["sclass"];
 			$article->setTime=$row["setTime"];
+			$article->steacher=$row["steacher"];
 			
 			$data[] = $article;
 			
