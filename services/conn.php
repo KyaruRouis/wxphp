@@ -1,8 +1,8 @@
 <?php
-	$servername = "10.13.102.171";
-	$dbname = "thinkphp_demo";
-	$username = "root";//没改的话一般时root
-	$password = "RbhXP8s6";
+	$servername = "";
+	$dbname = "";
+	$username = ";//没改的话一般时root
+	$password = "";
 	//连接MYSQL数据库
 	$conn = new mysqli($servername, $username, $password,$dbname,'3306');
 	//检查连接是否成功
